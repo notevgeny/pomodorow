@@ -1,0 +1,84 @@
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+  --dark: #30384b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark);
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.button-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px
+}
+
+button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 0;
+  width: 100px;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+}
+
+button.with-text {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.slider {
+  height: 40px;
+  border: 2px solid var(--red);
+  border-radius: 20px;
+}
+
+.slider.break {
+  border: 2px solid var(--green);
+}
+
+.thumb {
+  background-color: var(--red);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.slider.break .thumb {
+  background-color: var(--green);
+}
